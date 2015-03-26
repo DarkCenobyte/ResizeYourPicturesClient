@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.serordroin.resizeyourpicturesclient.ResponseActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="original size:"
+        android:id="@+id/sizeOriginal"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="new size:"
+        android:id="@+id/sizeNew"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/sizeOriginal"
+        android:layout_alignStart="@+id/sizeOriginal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="URL:"
+        android:id="@+id/urlTextBox"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/newSizeTextView"
+        android:layout_alignStart="@+id/newSizeTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/urlImageView"
+        android:layout_below="@+id/urlTextBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/urlTextView"
+        android:layout_below="@+id/urlTextBox"
+        android:layout_alignStart="@+id/urlTextBox"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/newSizeTextView"
+        android:layout_below="@+id/sizeNew"
+        android:layout_alignStart="@+id/sizeNew"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/oldSizeTextView"
+        android:layout_below="@+id/sizeOriginal"
+        android:layout_alignStart="@+id/sizeOriginal"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>
